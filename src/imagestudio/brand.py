@@ -1,9 +1,9 @@
-"""The Presidium Image Studio mark, drawn with Pillow from the family's SVG geometry (ADR-065):
+"""The Senacula Image Studio mark, drawn with Pillow from the family's SVG geometry (ADR-065):
 six seats around one table with the chair at the head; Image Studio puts a picture on the
 table. Used for the app icon, home-screen PNGs, Store artwork and the in-app raster icons, so
 every raster is generated from one definition and matches the SVGs in the brand folder."""
 
-# Copyright 2026 Ratul Roy (royal-programmer) and the Presidium contributors
+# Copyright 2026 Ratul Roy (royal-programmer) and the Senacula contributors
 # SPDX-License-Identifier: Apache-2.0
 
 from __future__ import annotations
@@ -11,10 +11,10 @@ from __future__ import annotations
 import io
 from pathlib import Path
 
-FAMILY = "Presidium"
+FAMILY = "Senacula"
 PRODUCT = "Image Studio"
 FULL_NAME = f"{FAMILY} {PRODUCT}"
-VIOLET = "#5B4FD1"  # Presidium
+VIOLET = "#5B4FD1"  # Senacula
 TEAL = "#149A78"  # Image Studio
 LIGHT = "#F4F4F5"
 INK = "#15161A"
@@ -114,7 +114,7 @@ def _font(size: int, bold: bool):
 
 def lockup(width: int, height: int, background: str = TEAL, with_mark: bool = True):
     """Store artwork: the tile colour as background, the light mark, and the lockup
-    "Presidium" (medium) + "Image Studio" (regular) beneath it."""
+    "Senacula" (medium) + "Image Studio" (regular) beneath it."""
     from PIL import Image, ImageDraw
 
     img = Image.new("RGBA", (width, height), background)
@@ -184,7 +184,7 @@ def poster(
     tagline: tuple[str, str] = TAGLINE,
 ):
     """Store artwork on the dark ground (ADR-066): the mark in colour over a soft glow,
-    "Presidium" in medium weight at about 55% of the product size, the product name large and
+    "Senacula" in medium weight at about 55% of the product size, the product name large and
     regular, then a two-line tagline with the accent colour on the second line. Nothing sits
     within 8% of an edge. Tall (9:16), wide (16:9) and square (1:1) layouts."""
     from PIL import Image, ImageDraw

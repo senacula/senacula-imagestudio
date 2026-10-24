@@ -6,7 +6,7 @@ which weights run is whether they physically fit in memory, and when that happen
 says so in ``fit_note`` and every job record carries it. Nothing here lowers resolution or
 steps on its own.
 """
-# Copyright 2026 Ratul Roy (royal-programmer) and the Presidium contributors
+# Copyright 2026 Ratul Roy (royal-programmer) and the Senacula contributors
 # SPDX-License-Identifier: Apache-2.0
 
 from __future__ import annotations

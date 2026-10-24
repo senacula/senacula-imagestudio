@@ -6,7 +6,7 @@ model's input, the predicted matte is scaled back to the original size and used 
 channel. Nothing leaves the machine. onnxruntime is an optional dependency (``pip install
 presidium-imagestudio[bg]``).
 """
-# Copyright 2026 Ratul Roy (royal-programmer) and the Presidium contributors
+# Copyright 2026 Ratul Roy (royal-programmer) and the Senacula contributors
 # SPDX-License-Identifier: Apache-2.0
 
 from __future__ import annotations

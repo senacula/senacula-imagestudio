@@ -1,4 +1,4 @@
-Presidium Image Studio - Windows app
+Senacula Image Studio - Windows app
 ======================================
 
 1. Unzip this folder anywhere (for example C:\Apps\ImageStudio).
@@ -31,4 +31,4 @@ ImageStudio.exe cli generate "a lighthouse at dusk" --preset best
 ImageStudio.exe cli --help
 
 Licence: Apache-2.0 (LICENSE, NOTICE). The name and logo are trademarks (TRADEMARK.md).
-Made with love by Ratul Roy (royal-programmer). https://presidiumdev.github.io/presidium-imagestudio/
+Made with love by Ratul Roy (royal-programmer). https://senacula.github.io/senacula-imagestudio/

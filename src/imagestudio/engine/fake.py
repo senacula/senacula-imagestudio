@@ -1,6 +1,6 @@
 """A fake engine for tests and dry runs: writes a tiny valid PNG, reports progress, needs
 no models and no network."""
-# Copyright 2026 Ratul Roy (royal-programmer) and the Presidium contributors
+# Copyright 2026 Ratul Roy (royal-programmer) and the Senacula contributors
 # SPDX-License-Identifier: Apache-2.0
 
 from __future__ import annotations

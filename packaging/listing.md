@@ -1,10 +1,10 @@
-# Presidium Image Studio · Store listing (copy-paste)
+# Senacula Image Studio · Store listing (copy-paste)
 
 Update submission under the existing product. Package identity, publisher display name and
 age ratings unchanged. Everything below is new text or a new URL.
 
 ## Display name
-Presidium Image Studio
+Senacula Image Studio
 
 ## Short description (≤ 200 chars)
 Your own image studio. Create, edit, extend, restyle, upscale, cut out, repair faces and search pictures with free, permissively licensed models, entirely on your PC.
@@ -17,7 +17,7 @@ Your own image studio. Create, edit, extend, restyle, upscale, cut out, repair f
 - Everything runs on your own machine, offline after setup, with permissively licensed models only; an MCP server is built in for AI agents.
 
 ## Description (≤ 10,000 chars)
-Presidium Image Studio is a complete image studio that runs on your own computer. Nothing is uploaded, nothing is paid for, and there is no account.
+Senacula Image Studio is a complete image studio that runs on your own computer. Nothing is uploaded, nothing is paid for, and there is no account.
 
 WHAT IT DOES
 • Create images from text with FLUX.1 schnell or Qwen-Image, with a live preview while they render.
@@ -43,25 +43,25 @@ Models are downloaded only when you ask, pinned by SHA-256, and stored in your u
 WHAT TO EXPECT
 A 16 GB laptop without a discrete GPU renders a full-quality image in about an hour on the CPU build and roughly half that with the Vulkan build on integrated graphics; the studio measures this and shows it before each run. A desktop with a discrete GPU takes minutes. The first run downloads about 10 GB of model files with your consent.
 
-Presidium Image Studio · made with ♥ by Ratul Roy (royal-programmer).
+Senacula Image Studio · made with ♥ by Ratul Roy (royal-programmer).
 
 ## URLs
-- Privacy policy: https://presidiumdev.github.io/presidium-imagestudio/privacy.html
-- Website: https://presidiumdev.github.io/presidium-imagestudio/
-- Support: https://github.com/presidiumdev/presidium-imagestudio/issues
+- Privacy policy: https://senacula.github.io/senacula-imagestudio/privacy.html
+- Website: https://senacula.github.io/senacula-imagestudio/
+- Support: https://github.com/senacula/senacula-imagestudio/issues
 
 ## Search terms (≤ 7, each ≤ 30 chars)
 image generation; stable diffusion; FLUX; local AI; outpainting; upscale; background remover
 
 ## Copyright and trademark
-Copyright © 2026 Ratul Roy and the Presidium contributors. "Presidium" and "Presidium Image Studio" are trademarks of Ratul Roy.
+Copyright © 2026 Ratul Roy and the Senacula contributors. "Senacula" and "Senacula Image Studio" are trademarks of Ratul Roy.
 
 ## What's new in this version
-Presidium Image Studio is the new name of Image Studio by Hivemind. New: templates, a prompt assistant, one-click looks, canvas extension, face repair, search by meaning, projects with export, batch tools, and an agents page for MCP clients. Everything still runs on your machine.
+Senacula Image Studio is the new name of Image Studio by Hivemind. New: templates, a prompt assistant, one-click looks, canvas extension, face repair, search by meaning, projects with export, batch tools, and an agents page for MCP clients. Everything still runs on your machine.
 
 ## Screenshots (1440×900 PNG)
 packaging/store-screenshots/shot-create.png · shot-home.png · shot-gallery.png · shot-viewer.png · shot-sketch.png · shot-settings.png
 Captions: "Create: prompt, settings, live preview and queue" · "Home: templates and tools" · "Gallery: projects, search by meaning, batch tools" · "Viewer: looks, edit, extend, tools, versions" · "Sketch: a purpose-built canvas" · "Settings: benchmark, memory, models and engines"
 
 ## Store artwork
-packaging/store-assets/ (box art, poster, hero, display icons), regenerated from the Presidium mark by `python -m imagestudio.brand .`
+packaging/store-assets/ (box art, poster, hero, display icons), regenerated from the Senacula mark by `python -m imagestudio.brand .`

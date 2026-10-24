@@ -6,7 +6,7 @@ Writes site/assets/shot-*.png (the website) and packaging/store-screenshots/*.pn
 Center). Needs a studio with a few finished images in its gallery; the gallery, viewer and
 settings shots show real content, never mock-ups."""
 
-# Copyright 2026 Ratul Roy (royal-programmer) and the Presidium contributors
+# Copyright 2026 Ratul Roy (royal-programmer) and the Senacula contributors
 # SPDX-License-Identifier: Apache-2.0
 
 from __future__ import annotations

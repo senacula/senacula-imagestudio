@@ -6,7 +6,7 @@ readme = "README.md"
 license = "Apache-2.0"
 license-files = ["LICENSE", "NOTICE"]
 requires-python = ">=3.11"
-authors = [{ name = "Ratul Roy (royal-programmer)" }, { name = "Presidium" }]
+authors = [{ name = "Ratul Roy (royal-programmer)" }, { name = "Senacula" }]
 maintainers = [{ name = "Ratul Roy (royal-programmer)" }]
 keywords = ["mcp", "image-generation", "stable-diffusion.cpp", "flux", "local"]
 classifiers = [
@@ -28,12 +28,12 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/presidiumdev/presidium-imagestudio"
-Source = "https://github.com/presidiumdev/presidium-imagestudio"
-Issues = "https://github.com/presidiumdev/presidium-imagestudio/issues"
-Changelog = "https://github.com/presidiumdev/presidium-imagestudio/releases"
+Homepage = "https://github.com/senacula/senacula-imagestudio"
+Source = "https://github.com/senacula/senacula-imagestudio"
+Issues = "https://github.com/senacula/senacula-imagestudio/issues"
+Changelog = "https://github.com/senacula/senacula-imagestudio/releases"
 Author = "https://github.com/royal-programmer"
-Trademark = "https://github.com/presidiumdev/presidium-imagestudio/blob/main/TRADEMARK.md"
+Trademark = "https://github.com/senacula/senacula-imagestudio/blob/main/TRADEMARK.md"
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "pytest-asyncio>=0.23", "ruff>=0.6"]

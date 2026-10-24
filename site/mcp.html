@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>For agents · Presidium Image Studio</title>
-<meta name="description" content="Presidium Image Studio is an MCP server: Claude, Cursor, VS Code and any MCP client can make, edit and search images on your own machine, offline.">
+<title>For agents · Senacula Image Studio</title>
+<meta name="description" content="Senacula Image Studio is an MCP server: Claude, Cursor, VS Code and any MCP client can make, edit and search images on your own machine, offline.">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
 <style>
   :root { --bg: #0f1012; --surface: #17181b; --line: #2a2b31; --ink: #f2f2f0; --ink2: #c9c9c4; --muted: #8f9096; --accent: #22B48C; --honey: #f0b429; }
@@ -21,7 +21,7 @@
 </style>
 </head>
 <body><div class="wrap">
-  <p class="muted"><a href="./">← Presidium Image Studio</a></p>
+  <p class="muted"><a href="./">← Senacula Image Studio</a></p>
   <h1>Image Studio for agents</h1>
   <p>Image Studio is an <b>MCP server</b> as well as an app. Claude, Cursor, VS Code and any other Model Context Protocol client can make, edit, repair, upscale and search images on your own machine, offline, with the same rules as the window: quality is a setting, never a consequence; every estimate is measured; nothing is uploaded.</p>
 
@@ -38,7 +38,7 @@
     <tr><td>VS Code (agent mode)</td><td><code>.vscode/mcp.json</code></td><td><pre>{ "servers": { "imagestudio":
     { "type": "stdio", "command": "imagestudio", "args": ["serve"] } } }</pre></td></tr>
   </table>
-  <p class="muted">Ready-made files: <a href="https://github.com/presidiumdev/presidium-imagestudio/tree/main/examples/mcp" target="_blank" rel="noopener">examples/mcp</a> in the repository.</p>
+  <p class="muted">Ready-made files: <a href="https://github.com/senacula/senacula-imagestudio/tree/main/examples/mcp" target="_blank" rel="noopener">examples/mcp</a> in the repository.</p>
 
   <h2>Tools</h2>
   <table>
@@ -69,5 +69,5 @@
   <h2>What to tell users about time</h2>
   <p>Quote <code>capabilities()</code>, which carries the calibrated numbers for the machine the server runs on. For scale: on a 16 GB laptop without a discrete GPU, FLUX.1-schnell q5 at 1024² took about 22 minutes on <code>fast</code> and just under two hours on <code>best</code> with the CPU build; the Vulkan build was 2.4× faster on the same integrated GPU. Describe takes seconds; the prompt assistant 20-40 s once warm.</p>
 
-  <p class="muted" style="margin-top:36px">Presidium Image Studio is free software (Apache-2.0), made with ♥ by <a href="https://github.com/royal-programmer" target="_blank" rel="noopener">Ratul Roy (royal-programmer)</a>. "Presidium" and "Presidium Image Studio" are trademarks; see <a href="https://github.com/presidiumdev/presidium-imagestudio/blob/main/TRADEMARK.md" target="_blank" rel="noopener">TRADEMARK.md</a>.</p>
+  <p class="muted" style="margin-top:36px">Senacula Image Studio is free software (Apache-2.0), made with ♥ by <a href="https://github.com/royal-programmer" target="_blank" rel="noopener">Ratul Roy (royal-programmer)</a>. "Senacula" and "Senacula Image Studio" are trademarks; see <a href="https://github.com/senacula/senacula-imagestudio/blob/main/TRADEMARK.md" target="_blank" rel="noopener">TRADEMARK.md</a>.</p>
 </div></body></html>

@@ -1,4 +1,4 @@
-Presidium Image Studio - macOS and Linux builds
+Senacula Image Studio - macOS and Linux builds
 ==================================================
 
 macOS (Apple silicon)

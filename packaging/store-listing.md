@@ -3,13 +3,13 @@
 Use exactly as written or edit freely. Character limits are Partner Center's.
 
 ## Product name
-Presidium Image Studio (reserve it under Product management → Manage app names, then make it the listing's display name; the original reservation "Image Studio by Hivemind" stays on the account)
+Senacula Image Studio (reserve it under Product management → Manage app names, then make it the listing's display name; the original reservation "Image Studio by Hivemind" stays on the account)
 
 ## Short description (≤ 200 chars)
 Your own image studio. Create, edit, extend, restyle, upscale, cut out, repair faces and search pictures with free, permissively licensed models, entirely on your PC.
 
 ## Description (≤ 10,000 chars)
-Presidium Image Studio is a complete image studio that runs on your own computer. Nothing is uploaded, nothing is paid for, and there is no account.
+Senacula Image Studio is a complete image studio that runs on your own computer. Nothing is uploaded, nothing is paid for, and there is no account.
 
 WHAT IT DOES
 • Create images from text with FLUX.1 schnell or Qwen-Image, with a live preview while they render.
@@ -36,7 +36,7 @@ Models are downloaded only when you ask, pinned by SHA-256, and stored in your u
 WHAT TO EXPECT
 A 16 GB laptop without a discrete GPU renders a full-quality image in about an hour on the CPU build and roughly half that with the Vulkan build on integrated graphics; the studio measures this and shows it before each run. A desktop with a discrete GPU takes minutes. The first run downloads about 10 GB of model files with your consent.
 
-Presidium Image Studio · made with ♥ by Ratul Roy (royal-programmer).
+Senacula Image Studio · made with ♥ by Ratul Roy (royal-programmer).
 
 ## Category / subcategory
 Photo & video / Photo editing (or "Multimedia design")
@@ -45,16 +45,16 @@ Photo & video / Photo editing (or "Multimedia design")
 image generation; stable diffusion; FLUX; local AI; outpainting; upscale; background remover
 
 ## Copyright and trademark info
-Copyright © 2026 Ratul Roy and the Presidium contributors. "Presidium" and "Presidium Image Studio" are trademarks of Ratul Roy.
+Copyright © 2026 Ratul Roy and the Senacula contributors. "Senacula" and "Senacula Image Studio" are trademarks of Ratul Roy.
 
 ## Privacy policy URL (required: the app declares the internetClient capability)
-https://presidiumdev.github.io/presidium-imagestudio/privacy.html
+https://senacula.github.io/senacula-imagestudio/privacy.html
 
 ## Website
-https://presidiumdev.github.io/presidium-imagestudio/
+https://senacula.github.io/senacula-imagestudio/
 
 ## Support contact
-https://github.com/presidiumdev/presidium-imagestudio/issues
+https://github.com/senacula/senacula-imagestudio/issues
 
 ## Screenshots (desktop, PNG, 1440×900, in site/assets)
 shot-create.png · shot-gallery.png · shot-viewer.png · shot-sketch.png · shot-settings.png

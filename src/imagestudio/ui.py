@@ -1,6 +1,6 @@
 """The studio's own local web UI: one HTML page plus a small JSON API over the same Studio
 the MCP tools use. Settings panel with a live load meter, the queue, and a gallery."""
-# Copyright 2026 Ratul Roy (royal-programmer) and the Presidium contributors
+# Copyright 2026 Ratul Roy (royal-programmer) and the Senacula contributors
 # SPDX-License-Identifier: Apache-2.0
 
 from __future__ import annotations
@@ -72,7 +72,7 @@ def build_app(studio: Studio, on_remote_change=None) -> Starlette:
     async def manifest(_: Request) -> JSONResponse:
         return JSONResponse(
             {
-                "name": "Presidium Image Studio",
+                "name": "Senacula Image Studio",
                 "short_name": "Image Studio",
                 "start_url": "/",
                 "display": "standalone",
@@ -985,7 +985,7 @@ def serve_ui(host: str | None = None, port: int = 8766, start_worker: bool = Tru
     if host is None:
         host = "0.0.0.0" if studio.settings.remote_enabled else "127.0.0.1"
     mode = "rendering jobs" if studio.worker_active else "submitting to the running worker"
-    print(f"Presidium Image Studio UI at http://{host}:{port}  ({mode})", flush=True)
+    print(f"Senacula Image Studio UI at http://{host}:{port}  ({mode})", flush=True)
     try:
         uvicorn.run(build_app(studio), host=host, port=port, log_level="warning")
     finally:

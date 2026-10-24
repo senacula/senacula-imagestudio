@@ -1,15 +1,15 @@
-# Presidium Image Studio
+# Senacula Image Studio
 
-**Website:** https://presidiumdev.github.io/presidium-imagestudio/ · **PyPI:** https://pypi.org/project/presidium-imagestudio/ · **Releases:** https://github.com/presidiumdev/presidium-imagestudio/releases
+**Website:** https://senacula.github.io/senacula-imagestudio/ · **PyPI:** https://pypi.org/project/presidium-imagestudio/ · **Releases:** https://github.com/senacula/senacula-imagestudio/releases
 
 A free, local image studio and MCP server with permissively licensed models: text to image,
 editing, sketch to image, one-click looks, outpainting, face repair, upscaling, background
 removal, image to text, search by meaning, projects and templates. A desktop app for Windows,
 macOS and Linux, a web UI you can use from your phone, a command line, and an MCP server for
-Presidium, Claude, Cursor or any other agent. It runs on whatever machine you have, on the CPU
+Senacula, Claude, Cursor or any other agent. It runs on whatever machine you have, on the CPU
 if that is all there is.
 
-Design: ADR-051 of the Presidium (formerly Hivemind) app. Licence: Apache-2.0. Earlier
+Design: ADR-051 of the Senacula (formerly Hivemind) app. Licence: Apache-2.0. Earlier
 releases were published as "Image Studio by Hivemind"; the package, command and data folder
 keep their original names so nothing installed breaks.
 
@@ -160,7 +160,7 @@ machine. Needs the vision engine and model that Describe uses.
 **Windows app:** easiest from the [Microsoft Store](https://apps.microsoft.com/detail/9NJ8PVHV74KZ)
 (signed by Microsoft, no SmartScreen warning, automatic updates; `winget install 9NJ8PVHV74KZ -s msstore`
 works too). Or download `ImageStudio-<version>-Setup.exe` from the
-[latest release](https://github.com/presidiumdev/presidium-imagestudio/releases/latest) and run it:
+[latest release](https://github.com/senacula/senacula-imagestudio/releases/latest) and run it:
 Start menu entry, search, Pin to Start, uninstall from Settings → Apps, optional desktop
 shortcut and start-at-sign-in. No administrator rights needed. Prefer portable? The
 `…-windows-x64.zip` is the same app: unzip, run `ImageStudio.exe`. The studio opens in a window of its own (WebView2, part of Windows 10
@@ -187,7 +187,7 @@ or with pip or uv (`pip install presidium-imagestudio`, `uv tool install presidi
 Background removal needs ONNX Runtime, which is one extra: `pipx install
 "presidium-imagestudio[bg]"`. Everything else works without it.
 The GitHub Releases of this repository and the `hivemind-imagestudio` package on PyPI are
-the official builds (see NOTICE and TRADEMARK.md). Inside Presidium, Settings → Tools
+the official builds (see NOTICE and TRADEMARK.md). Inside Senacula, Settings → Tools
 installs and connects it for you.
 
 Open the studio in your browser (everything still runs on your machine):
@@ -364,13 +364,13 @@ pinned, hash-checked catalogue.
 Tool descriptions are written for an AI caller: what the tool does, when to use it, what
 comes back, and how often to poll. Ready-made client configs (Claude Desktop, Claude Code,
 Cursor, VS Code) and a typical agent flow: [`examples/mcp`](examples/mcp/README.md) and the
-[For agents](https://presidiumdev.github.io/presidium-imagestudio/mcp.html) page. The Windows
+[For agents](https://senacula.github.io/senacula-imagestudio/mcp.html) page. The Windows
 app is the same server: `ImageStudio.exe cli serve` (Settings → About shows the exact path).
 
 ### `generate` parameters
 
 Every parameter is optional except the prompt. The same parameters are available on the
-CLI (`imagestudio generate --help`) and will be mirrored in Presidium's duty form.
+CLI (`imagestudio generate --help`) and will be mirrored in Senacula's duty form.
 
 | Parameter | Default | What it does |
 | --- | --- | --- |
@@ -432,7 +432,7 @@ user may always pick a slower setting. Every later job refines the same calibrat
 
 | Component | Licence |
 | --- | --- |
-| Presidium Image Studio | Apache-2.0 |
+| Senacula Image Studio | Apache-2.0 |
 | stable-diffusion.cpp, ggml | MIT |
 | FLUX.1 [schnell] weights (GGUF by city96) | Apache-2.0 |
 | T5-XXL v1.1 encoder (GGUF by city96), CLIP-L (comfyanonymous) | Apache-2.0 |
@@ -440,13 +440,13 @@ user may always pick a slower setting. Every later job refines the same calibrat
 | Qwen-Image weights (GGUF by city96), Qwen-Image VAE | Apache-2.0 |
 | Qwen2.5-VL-7B-Instruct text encoder (GGUF) | Apache-2.0 |
 
-The code is Apache-2.0: use it, fork it, ship it. The names "Presidium", "Presidium Image
+The code is Apache-2.0: use it, fork it, ship it. The names "Senacula", "Senacula Image
 Studio" and the logos are trademarks and are not licensed with the code; forks need their own
-name and may say "based on Presidium Image Studio". The full policy is in [TRADEMARK.md](TRADEMARK.md).
+name and may say "based on Senacula Image Studio". The full policy is in [TRADEMARK.md](TRADEMARK.md).
 Official builds are the GitHub Releases of this repository and the `hivemind-imagestudio`
 package on PyPI.
 
-Presidium Image Studio · made with ♥ by [Ratul Roy (royal-programmer)](https://github.com/royal-programmer).
+Senacula Image Studio · made with ♥ by [Ratul Roy (royal-programmer)](https://github.com/royal-programmer).
 Cite it with the `CITATION.cff` in the repository.
 
 ## Development
@@ -488,13 +488,13 @@ Next: Qwen-Image-Edit as an instruction-edit model, LoRA, GPU builds (Vulkan, CU
 cloud engines behind the same interface, a marketing site.
 Packaged app (noted 2026-10-14, after the first PyPI release): today the studio is a command-line
 program plus a browser UI (`imagestudio ui`) and an MCP server (`imagestudio serve`); it needs
-Python 3.11+ or uv, and something has to run those commands (inside Presidium, the hub does; in
+Python 3.11+ or uv, and something has to run those commands (inside Senacula, the hub does; in
 Claude Desktop or Cursor, the MCP config does). A double-click experience is a later step: a
 packaged build with a tray icon that keeps `serve` and `ui` running, an installer per platform,
-and no Python on the machine. Planned after the first external users arrive, since Presidium
+and no Python on the machine. Planned after the first external users arrive, since Senacula
 users already have the one-click path through Settings → Tools.
-Later: optional ComfyUI engine, GPU builds (CUDA, ROCm), the Presidium catalogue entry,
-and a three-tier model list (Presidium-verified, compatible-but-unverified, bring your own
+Later: optional ComfyUI engine, GPU builds (CUDA, ROCm), the Senacula catalogue entry,
+and a three-tier model list (Senacula-verified, compatible-but-unverified, bring your own
 model with a declared licence).
 
 Video (placeholder, scope only): `generate_video` (text to video) and `animate` (image to

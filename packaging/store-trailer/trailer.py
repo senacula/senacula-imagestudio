@@ -5,7 +5,7 @@ for every release.
 
 Produces trailer.mp4 (1920x1080, H.264, no sound, 45-60 s), poster.png (1920x1080, the frame
 the Store asks for next to a trailer) and the raw trailer.webm. Six scenes match the six Store
-screenshots; captions are drawn by the page itself (an injected overlay in the Presidium type),
+screenshots; captions are drawn by the page itself (an injected overlay in the Senacula type),
 and the last frame is the mark with the lockup.
 
 Reusable: ``record(url, out, brand, scenes)`` takes any product's brand (name, product, colour,
@@ -13,7 +13,7 @@ mark SVG) and any list of ``Scene`` objects, so Shape Studio and the desktop app
 their own trailers with the same tool. Needs ffmpeg on PATH for the MP4; without it the WebM
 is kept and the script says so."""
 
-# Copyright 2026 Ratul Roy (royal-programmer) and the Presidium contributors
+# Copyright 2026 Ratul Roy (royal-programmer) and the Senacula contributors
 # SPDX-License-Identifier: Apache-2.0
 # ruff: noqa: E501  (CSS and JS snippets read better on one line)
 
@@ -299,7 +299,7 @@ def imagestudio_brand() -> Brand:
     from imagestudio.brand import LIGHT, PRODUCT, TEAL, mark_svg
 
     svg = mark_svg(colour=LIGHT).replace("<svg ", '<svg width="200" height="200" ', 1)
-    return Brand("Presidium", PRODUCT, TEAL, svg)
+    return Brand("Senacula", PRODUCT, TEAL, svg)
 
 
 def main() -> int:

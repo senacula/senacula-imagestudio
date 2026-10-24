@@ -4,6 +4,14 @@ All notable changes to Hivemind Image Studio. The format follows Keep a Changelo
 follow semantic versioning. Official builds: GitHub Releases and the `hivemind-imagestudio`
 package on PyPI.
 
+## Unreleased
+
+### Changed
+- Renamed to **Senacula Image Studio** (the Presidium name had live trademark conflicts). The mark,
+  colours, package name `presidium-imagestudio`, command, data folder and Store identity are
+  unchanged; only the displayed name, the organisation links (senacula/senacula-imagestudio) and
+  the website address (senacula.github.io/senacula-imagestudio) change.
+
 ## 0.3.10 — 2026-10-19
 
 ### Changed

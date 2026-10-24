@@ -1,4 +1,4 @@
-; Inno Setup script for Presidium Image Studio.
+; Inno Setup script for Senacula Image Studio.
 ; Compiled by the release workflow on windows-latest:
 ;   iscc /DMyAppVersion=0.3.4 /DSourceDir=..\dist\ImageStudio /DOutDir=..\dist packaging\ImageStudio.iss
 ; Installs per user by default (no administrator prompt; %LOCALAPPDATA%\Programs), registers the
@@ -14,10 +14,10 @@
   #define OutDir "..\dist"
 #endif
 
-#define MyAppName "Presidium Image Studio"
+#define MyAppName "Senacula Image Studio"
 #define MyAppShort "Image Studio"
-#define MyAppPublisher "Presidium"
-#define MyAppURL "https://presidiumdev.github.io/presidium-imagestudio/"
+#define MyAppPublisher "Senacula"
+#define MyAppURL "https://senacula.github.io/senacula-imagestudio/"
 #define MyAppExeName "ImageStudio.exe"
 
 [Setup]
@@ -27,10 +27,10 @@ AppVersion={#MyAppVersion}
 AppVerName={#MyAppName} {#MyAppVersion}
 AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
-AppSupportURL=https://github.com/presidiumdev/presidium-imagestudio/issues
-AppUpdatesURL=https://github.com/presidiumdev/presidium-imagestudio/releases
-AppCopyright=Copyright (C) 2026 Ratul Roy (royal-programmer) and the Presidium contributors
-DefaultDirName={autopf}\Presidium Image Studio
+AppSupportURL=https://github.com/senacula/senacula-imagestudio/issues
+AppUpdatesURL=https://github.com/senacula/senacula-imagestudio/releases
+AppCopyright=Copyright (C) 2026 Ratul Roy (royal-programmer) and the Senacula contributors
+DefaultDirName={autopf}\Senacula Image Studio
 DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 PrivilegesRequired=lowest
