@@ -50,8 +50,9 @@ Listed since 2026-10-16: Store ID **9NJ8PVHV74KZ**, https://apps.microsoft.com/d
 - `runFullTrust` capability (a PyInstaller app is a classic desktop app), declared.
 - The exe is referenced as `ImageStudio\ImageStudio.exe`; the PyInstaller folder is copied in
   whole.
-- Tile and logo assets in `packaging/msix/Assets` are generated from the brand mark by
-  the script that produced them (see git history) at every required scale.
+- Tile and logo assets in `packaging/msix/Assets` are generated from the brand SVGs by
+  `python -m imagestudio.brand .` at every required scale, each at the drawing level for its
+  size (large from 96 px, medium 40-95, small 21-39, tiny below).
 - The package writes only under `%LOCALAPPDATA%\hivemind-imagestudio`, which MSIX allows.
 
 ## Things to decide later

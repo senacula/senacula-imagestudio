@@ -7,6 +7,10 @@ package on PyPI.
 ## Unreleased
 
 ### Changed
+- The mark, redrawn (ADR-070): the ring with six hollow seats and the presiding dais, the
+  picture on the floor. Four drawings by size (`static/brand/image-tile*.svg`, copied from the
+  family repository); every icon, tile, poster and the header marks are rendered from them at
+  the level for their size, never scaled down from the large drawing.
 - Renamed to **Senacula Image Studio** (the Presidium name had live trademark conflicts). The mark,
   colours, package name `presidium-imagestudio`, command, data folder and Store identity are
   unchanged; only the displayed name, the organisation links (senacula/senacula-imagestudio) and

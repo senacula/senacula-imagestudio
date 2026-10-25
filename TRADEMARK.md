@@ -9,8 +9,8 @@ the Apache License says so explicitly.
 - **Senacula**
 - **Senacula Image Studio** (earlier releases were published as **Presidium Image Studio**,
   **Image Studio by Hivemind** and **Hivemind Image Studio**; those names remain ours)
-- the Senacula mark (six seats around one table, the chair at the head) and the Image Studio
-  tile with the picture on the table
+- the Senacula mark (the ring: six hollow seats around one table, the presiding dais at the
+  bottom) and the Image Studio tile with the picture on the floor
 - the package names **presidium-imagestudio** and **hivemind-imagestudio** on PyPI and the executable
   name **ImageStudio**
 

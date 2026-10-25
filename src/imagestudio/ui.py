@@ -79,7 +79,7 @@ def build_app(studio: Studio, on_remote_change=None) -> Starlette:
                 "background_color": "#0f1012",
                 "theme_color": "#0f1012",
                 "icons": [
-                    {"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml"},
+                    {"src": "/icon.svg?size=512", "sizes": "any", "type": "image/svg+xml"},
                     {"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"},
                     {
                         "src": "/icon-512.png",
@@ -112,10 +112,15 @@ def build_app(studio: Studio, on_remote_change=None) -> Starlette:
             headers={"cache-control": "public, max-age=86400"},
         )
 
-    async def icon(_: Request) -> Response:
+    async def icon(request: Request) -> Response:
+        """The tile as SVG at the drawing level for ``?size=`` (default: the favicon)."""
         from imagestudio.brand import TEAL, mark_svg
 
-        return Response(mark_svg(tile=TEAL), media_type="image/svg+xml")
+        try:
+            size = max(1, int(request.query_params.get("size", 16)))
+        except ValueError:
+            size = 16
+        return Response(mark_svg(tile=TEAL, size=size), media_type="image/svg+xml")
 
     # -- remote access and pairing (the owner's machine only, except completing a pairing) --
 
